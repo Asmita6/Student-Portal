@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Student Data</title>
+  <link rel = "stylesheet" href = "C:\Users\Asmita Nayyar\Desktop\ES6Class\html\styling\form_style.css" type = "text/css">
+  <script src = "C:\Users\Asmita Nayyar\Desktop\ES6Class\html\javascript\main.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class = "row1">
+    <div id="c1">
+      <form id = "form1">
+        <h1><strong>Register Student Details</strong></h1>
+        Student Name :<input type = "text" id = "name1" placeholder = "Enter your name" /><br><br>
+        Rollno :<input type = "text" id = "rollno" placeholder = "College ID" /><br><br>
+        Stream :<input type = "text" id = "stream1" placeholder = "Stream" /><br><br>
+        Passout Year:
+        <select id = "year1">
+          <option value="2015">2015</option>
+          <option value="2016">2016</option>
+          <option value="2017">2017</option>
+          <option value="2018">2018</option>
+          <option value="2019">2019</option>
+          <option value="2020">2020</option>
+          <option value="2021">2021</option>
+          <option value="2022">2022</option>
+        </select><br><br>
+        <input type = "button" id = "submit" value = "Submit" onclick = "addrow()"/><br><br>
+      </form>
+    </div>
+    <div id="c2" >
+      <h2><b><center>Student Portal</center></b></h2><br><br>
+      <table id = "table1" cellspacing = "1">
+        <tr>
+          <th></th> <th>Student Name</th> <th>Rollno</th> <th>Stream</th> <th>Passout Year</th>
+        </tr>
+        <tr>
+          <td><input type = "checkbox" id = "chk"></td> <td>Asmita</td> <td>1510991131</td> <td>CSE</td> <td>2019</th>
+        </tr>
+      </table><br><br>
+      <input type = "button" id = "del" value = "Delete" onclick = "delrow()"/>
+      <input type = "button" id = "edit" value = "Edit" onclick = "editrow()"/><br><br>
+    </div>
+</div>
+</body>
+</html>
