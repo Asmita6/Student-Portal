@@ -82,33 +82,33 @@ let delrow = () =>
 
 let editrow = () =>
 {
-		let table2 = document.getElementById('table1');
+    let table2 = document.getElementById('table1');
     let rowCount = table2.rows.length;
-		let i = 1;
-		let c = 0;
+    let i = 1;
+    let c = 0;
     while(i < rowCount)
-		{
+    {
         var row = table2.rows[i];
         let chkbox = row.cells[0].getElementsByTagName('input')[0];
         if(true == chkbox.checked)
-			  {
-				      c++;
+	{
+	      c++;
               k=i;
         }
         i++;
     }
-		if(c > 1)
-			alert("You cannot update more than one row at a time");
-		else
-		{
-			let name1 = row.cells[1].innerHTML;
-			let roll1 = row.cells[2].innerHTML;
-			let stream1 = row.cells[3].innerHTML;
-      let pass1 = row.cells[4].innerHTML;
-			document.getElementById('name1').value = name1;
-			document.getElementById('rollno').value = roll1;
-			document.getElementById('stream1').value = stream1;
-      document.getElementById('year1').value = pass1;
-		}
+    if(c > 1)
+	alert("You cannot update more than one row at a time");
+    else
+    {
+	let name1 = row.cells[1].innerHTML;
+	let roll1 = row.cells[2].innerHTML;
+	let stream1 = row.cells[3].innerHTML;
+        let pass1 = row.cells[4].innerHTML;
+        document.getElementById('name1').value = name1;
+	document.getElementById('rollno').value = roll1;
+	document.getElementById('stream1').value = stream1;
+        document.getElementById('year1').value = pass1;
+    }
     document.getElementById("submit").value="Update";
 }
