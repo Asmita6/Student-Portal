@@ -1,6 +1,6 @@
 var k = 0;
 
-function addrow()
+var addrow = function()
 {
   let flag = 0;
   let flag2 = 0;
@@ -59,7 +59,7 @@ function addrow()
     document.getElementById("form1").reset();
 }
 
-function delrow()
+var delrow=function()
 {
   let table = document.getElementById('table1');
   let rowCount = table.rows.length;
@@ -80,7 +80,7 @@ function delrow()
   }
 }
 
-function editrow()
+var editrow=function()
 {
 		let table2 = document.getElementById('table1');
     let rowCount = table2.rows.length;
